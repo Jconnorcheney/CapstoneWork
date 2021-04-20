@@ -1,0 +1,35 @@
+<ion-header no-border>
+    <div class="login-header" >
+      <img class="logo-img" src = "assets/img/logo.png"/>
+    </div>
+</ion-header>
+
+<ion-content >
+  <div class="center">
+
+    <div heading-column-lr>
+      <h1 big-heading>Login</h1>
+      <h2 small-heading>Sign Up</h2>
+    </div>
+
+    <ion-label>
+      Login to your pRide account to access the map!
+    </ion-label>
+    <ion-item tranparent>
+      <img icon-small src="assets/img/user.png">
+      <ion-input [{ngModel}]="Email"placeholder="Username"type="text"></ion-input>
+    </ion-item>
+    <ion-item tranparent>
+      <img icon-small src="assets/img/lock.png">
+      <ion-input [{ngModel}]="Password"placeholder="Password"type="password"></ion-input>
+    </ion-item>
+    <ion-label class="forgot-password">Forgot Password?</ion-label>
+    <div linespace></div>
+    <ion-button class="ion-button-class" shape="round" fill="solid" size="large" expand="block" (click)="LoginOTP()">
+      Login
+    </ion-button>
+    <ion-label class="ion-text-center">Don't have an account?<span class="link-button" (click)="Register()"> Create Account</span>
+    </ion-label>
+  </div>
+
+</ion-content>
